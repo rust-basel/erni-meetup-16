@@ -8,7 +8,7 @@ Target Audience:
 - Customers, that want to adopt Rust (And switch their tech stack?)
 
 Topics of talks: () - are proposals
-- Quick intro to Rust: What's Rust, and where it's used
+- About ERNI + Quick intro to Rust: What's Rust, and where it's used, what's the promise - Alexander
 - Rust vs. Python serialization Speed - Silen
 - Experience from having mixed Rust/C++ Code Bases - Yasin
 
