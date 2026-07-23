@@ -8,15 +8,16 @@ Target Audience:
 - Customers, that want to adopt Rust (And switch their tech stack?)
 
 Topics of talks: () - are proposals
+- Quick intro to Rust: What's Rust, and where it's used
 - Rust vs. Python serialization Speed - Silen
+- Experience from having mixed Rust/C++ Code Bases - Yasin
+
 - (How to integrate Rust in e.g. C++) - Yasin
-- (Experience from having mixed Rust/C++ Code Bases) - Yasin
 - (Bevy Game Engine - an Intro) - Yasin
 
 Sponsoring
 - Room: Max 20-30 Person
   - If too many people: 
-    - Letsboot room as backup
     - FHNW @ dreispitz
 - Food & Drinks? (Approx 300 CHF for 20 attendees)
 
@@ -31,6 +32,7 @@ Who does what?
   - Announce on meetup.com
   - Announce on [this-week-in-rust.org](https://this-week-in-rust.org/blog/2026/07/22/this-week-in-rust-661/#europe) (is automatically scraped from meetup.com)
   - Announce on LinkedIn
+  - Letsboot room as backup
 
 - ERNI:
   - Prep the room: 
