@@ -9,7 +9,7 @@ Target Audience:
 
 Topics of talks: () - are proposals
 - About ERNI + Quick intro to Rust: What's Rust, and where it's used, what's the promise - Alexander
-- Rust vs. Python serialization Speed - Silen
+- Rust vs. Python serialization Speed (ask about Java, if possible) - Silen
 - Experience from having mixed Rust/C++ Code Bases - Yasin
 
 - (How to integrate Rust in e.g. C++) - Yasin
