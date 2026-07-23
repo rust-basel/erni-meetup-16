@@ -14,7 +14,10 @@ Topics of talks: () - are proposals
 - (Bevy Game Engine - an Intro) - Yasin
 
 Sponsoring
-- Room: Size?
+- Room: Max 20-30 Person
+  - If too many people: 
+    - Letsboot room as backup
+    - FHNW @ dreispitz
 - Food & Drinks? (Approx 300 CHF for 20 attendees)
 
 Date: 30th of September
@@ -26,11 +29,12 @@ Type of Meetup: Hybrid (No experience. Either complete online, or offline)
 Who does what?
 - Rust Basel: 
   - Announce on meetup.com
-  - Announce on this-week-in-rust.org
+  - Announce on [this-week-in-rust.org](https://this-week-in-rust.org/blog/2026/07/22/this-week-in-rust-661/#europe) (is automatically scraped from meetup.com)
   - Announce on LinkedIn
 
 - ERNI:
   - Prep the room: 
-    - Beamer
+    - Television, where people can present 
     - A place, where the talkee can put his laptop
-    - Food & Drinks
+    - Appero
+  - LinkedIn Werbung
