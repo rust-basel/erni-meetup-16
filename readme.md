@@ -3,6 +3,9 @@
 Open topics:
 - Workshop like - or talks evening?
 
+Language:
+- English
+
 Target Audience:
 - Rust enjoyers looking for a Rust job (at e.g. ERNI)
 - Customers, that want to adopt Rust (And switch their tech stack?)
@@ -24,6 +27,7 @@ Sponsoring
 Date: 30th of September
 
 When: Proposed time: 17:00 (Most Meetups start at 18:00/18:30 - depends on audience)
+- 18:00 - 20:00
 
 Type of Meetup: Hybrid (No experience. Either complete online, or offline)
 
