@@ -1,0 +1,9 @@
+[tools]
+java = '25'
+hyperfine = { version = "1.20" }
+
+[tasks.run]
+run = 'hyperfine --runs 1 "java src/hello_world.java"'
+
+[tasks.bench]
+run = 'hyperfine --runs 500 --warmup 100 "java src/hello_world.java"'
