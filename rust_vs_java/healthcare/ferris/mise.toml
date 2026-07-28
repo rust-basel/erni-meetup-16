@@ -1,0 +1,17 @@
+[tools]
+rust = { version = "1.97" }
+
+[tasks.run]
+run = 'cargo run'
+
+[tasks.test]
+run = 'cargo test'
+
+[tasks.check]
+run = 'cargo check'
+
+[tasks.verify]
+run = 'cargo check && cargo fmt --check && cargo clippy'
+
+[tasks.fmt]
+run = 'cargo fmt && cargo clippy --fix --allow-dirty'
