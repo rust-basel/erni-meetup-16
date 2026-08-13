@@ -49,20 +49,20 @@ pub struct MetaDataVersion {
     pub name: Option<String>,
     #[serde(rename = "@Description")]
     pub description: Option<String>,
-    #[serde(rename = "@def:DefineVersion")]
+    #[serde(rename = "@def:DefineVersion", alias = "@DefineVersion")]
     pub define_version: Option<String>,
-    #[serde(rename = "@def:StandardName")]
+    #[serde(rename = "@def:StandardName", alias = "@StandardName")]
     pub standard_name: Option<String>,
-    #[serde(rename = "@def:StandardVersion")]
+    #[serde(rename = "@def:StandardVersion", alias = "@StandardVersion")]
     pub standard_version: Option<String>,
 
-    #[serde(rename = "def:AnnotatedCRF")]
+    #[serde(rename = "def:AnnotatedCRF", alias = "AnnotatedCRF")]
     pub annotated_crf: Option<AnnotatedCrf>,
-    #[serde(rename = "def:SupplementalDoc")]
+    #[serde(rename = "def:SupplementalDoc", alias = "SupplementalDoc")]
     pub supplemental_docs: Vec<SupplementalDoc>,
-    #[serde(rename = "def:ValueListDef")]
+    #[serde(rename = "def:ValueListDef", alias = "ValueListDef")]
     pub value_list_defs: Vec<ValueListDef>,
-    #[serde(rename = "def:WhereClauseDef")]
+    #[serde(rename = "def:WhereClauseDef", alias = "WhereClauseDef")]
     pub where_clause_defs: Vec<WhereClauseDef>,
     #[serde(rename = "ItemGroupDef")]
     pub item_group_defs: Vec<ItemGroupDef>,
@@ -72,9 +72,9 @@ pub struct MetaDataVersion {
     pub code_lists: Vec<CodeList>,
     #[serde(rename = "MethodDef")]
     pub method_defs: Vec<MethodDef>,
-    #[serde(rename = "def:CommentDef")]
+    #[serde(rename = "def:CommentDef", alias = "CommentDef")]
     pub comment_defs: Vec<CommentDef>,
-    #[serde(rename = "def:leaf")]
+    #[serde(rename = "def:leaf", alias = "leaf")]
     pub leaves: Vec<Leaf>,
 }
 
@@ -82,14 +82,14 @@ pub struct MetaDataVersion {
 #[derive(Debug, Serialize, Deserialize, PartialEq)]
 #[serde(rename = "def:AnnotatedCRF")]
 pub struct AnnotatedCrf {
-    #[serde(rename = "def:DocumentRef")]
+    #[serde(rename = "def:DocumentRef", alias = "DocumentRef")]
     pub document_ref: Option<DocumentRef>,
 }
 
 #[derive(Debug, Serialize, Deserialize, PartialEq)]
 #[serde(rename = "def:SupplementalDoc")]
 pub struct SupplementalDoc {
-    #[serde(rename = "def:DocumentRef")]
+    #[serde(rename = "def:DocumentRef", alias = "DocumentRef")]
     pub document_ref: Option<DocumentRef>,
 }
 
@@ -120,7 +120,7 @@ pub struct ValueListItemRef {
     pub mandatory: Option<String>,
     #[serde(rename = "@MethodOID")]
     pub method_oid: Option<String>,
-    #[serde(rename = "def:WhereClauseRef")]
+    #[serde(rename = "def:WhereClauseRef", alias = "WhereClauseRef")]
     pub where_clause_ref: Option<WhereClauseRef>,
 }
 
@@ -145,7 +145,7 @@ pub struct WhereClauseDef {
 pub struct RangeCheck {
     #[serde(rename = "@SoftHard")]
     pub soft_hard: Option<String>,
-    #[serde(rename = "@def:ItemOID")]
+    #[serde(rename = "@def:ItemOID", alias = "@ItemOID")]
     pub item_oid: Option<String>,
     #[serde(rename = "@Comparator")]
     pub comparator: Option<String>,
@@ -171,17 +171,17 @@ pub struct ItemGroupDef {
     pub is_reference_data: Option<String>,
     #[serde(rename = "@SASDatasetName")]
     pub sas_dataset_name: Option<String>,
-    #[serde(rename = "@def:Structure")]
+    #[serde(rename = "@def:Structure", alias = "@Structure")]
     pub structure: Option<String>,
-    #[serde(rename = "@def:Class")]
+    #[serde(rename = "@def:Class", alias = "@Class")]
     pub class: Option<String>,
-    #[serde(rename = "@def:ArchiveLocationID")]
+    #[serde(rename = "@def:ArchiveLocationID", alias = "@ArchiveLocationID")]
     pub archive_location_id: Option<String>,
     #[serde(rename = "Description")]
     pub description: Option<Description>,
     #[serde(rename = "ItemRef")]
     pub item_refs: Vec<ItemGroupItemRef>,
-    #[serde(rename = "def:leaf")]
+    #[serde(rename = "def:leaf", alias = "leaf")]
     pub leaves: Vec<Leaf>,
 }
 
@@ -195,7 +195,7 @@ pub struct Description {
 #[derive(Debug, Serialize, Deserialize, PartialEq)]
 #[serde(rename = "TranslatedText")]
 pub struct TranslatedText {
-    #[serde(rename = "@xml:lang")]
+    #[serde(rename = "@xml:lang", alias = "@lang")]
     pub lang: Option<String>,
     #[serde(rename = "$text")]
     pub text: Option<String>,
@@ -234,17 +234,17 @@ pub struct ItemDef {
     pub data_type: Option<String>,
     #[serde(rename = "@Length")]
     pub length: Option<String>,
-    #[serde(rename = "@def:DisplayFormat")]
+    #[serde(rename = "@def:DisplayFormat", alias = "@DisplayFormat")]
     pub display_format: Option<String>,
-    #[serde(rename = "@def:CommentOID")]
+    #[serde(rename = "@def:CommentOID", alias = "@CommentOID")]
     pub comment_oid: Option<String>,
     #[serde(rename = "Description")]
     pub description: Option<Description>,
-    #[serde(rename = "def:Origin")]
+    #[serde(rename = "def:Origin", alias = "Origin")]
     pub origin: Option<Origin>,
     #[serde(rename = "CodeListRef")]
     pub code_list_ref: Option<CodeListRef>,
-    #[serde(rename = "def:ValueListRef")]
+    #[serde(rename = "def:ValueListRef", alias = "ValueListRef")]
     pub value_list_ref: Option<ValueListRef>,
 }
 
@@ -253,9 +253,9 @@ pub struct ItemDef {
 pub struct Origin {
     #[serde(rename = "@Type")]
     pub origin_type: Option<String>,
-    #[serde(rename = "def:DocumentRef")]
+    #[serde(rename = "def:DocumentRef", alias = "DocumentRef")]
     pub document_ref: Option<DocumentRef>,
-    #[serde(rename = "def:PDFPageRef")]
+    #[serde(rename = "def:PDFPageRef", alias = "PDFPageRef")]
     pub pdf_page_ref: Option<PdfPageRef>,
 }
 
@@ -353,8 +353,8 @@ pub struct CommentDef {
 pub struct Leaf {
     #[serde(rename = "@ID")]
     pub id: Option<String>,
-    #[serde(rename = "@xlink:href")]
+    #[serde(rename = "@xlink:href", alias = "@href")]
     pub href: Option<String>,
-    #[serde(rename = "def:title")]
+    #[serde(rename = "def:title", alias = "title")]
     pub title: Option<String>,
 }

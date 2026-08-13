@@ -1,0 +1,21 @@
+[tools]
+java = '25'
+hyperfine = '1.20'
+
+[tasks.build]
+run = './scripts/build.sh'
+
+[tasks.bench]
+run = './scripts/run-bench.sh -wi 3 -i 3 -w 5 -r 10'
+
+[tasks.bench-10mb]
+run = './scripts/run-bench.sh OdmBenchmark10Mb -wi 3 -i 3 -w 5 -r 10'
+
+[tasks.smoke]
+run = '''
+./scripts/build.sh &&
+java -cp "target/classes:$(echo lib/*.jar | tr ' ' ':')" bench.OdmSmokeTest
+'''
+
+[tasks.compare]
+run = './scripts/compare-with-rust.sh'

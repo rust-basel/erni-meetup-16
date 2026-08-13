@@ -10,6 +10,12 @@ run = 'cargo test'
 [tasks.check]
 run = 'cargo check'
 
+[tasks.bench]
+run = 'cargo bench --bench odm_bench -- --warm-up-time 5 --measurement-time 10'
+
+[tasks.bench-10mb]
+run = 'cargo bench --bench odm_bench -- 10mb --warm-up-time 5 --measurement-time 30 --sample-size 50'
+
 [tasks.verify]
 run = 'cargo check && cargo fmt --check && cargo clippy'
 
