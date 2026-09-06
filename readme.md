@@ -1,26 +1,29 @@
-# Erni meetup
+# Meetup with Rust Basel and ERNI
 
-A 2 hour meetup at ERNI, where the programming language Rust is promoted.
+A 2-hour meetup co-organized with Rust Basel.
 
-Language:
-- English
+## Details
 
-Target Audience:
-- Non-technical audience
-- Rust devs looking for a Rust job (at e.g. ERNI)
-- Customers, that want to adopt Rust (And switch their tech stack?)
+| Field | Info |
+| --- | --- |
+| **Date** | 30 September, 18:00–20:00 |
+| **Language** | English |
+| **Location** | Aeschenvorstadt 36, 4052 Basel (CH) – ERNI office, 6th floor |
+| **Room** | Bluesky Meeting Room – seats up to 30 people, has the needed remote infrastructure, reserved |
+| **Duration** | 2 hours |
+| **Target audience** | Rust software engineers, interested non-experts, ERNI customers |
 
-Topics of talks:
-- Why Erni uses Rust and an Intro to Rust - Alexander
-- A performance comparison between python/java serialization and Serde in Rust - Silen
-- Experiences from mixed Rust/C++ Codebases - and lessons learned. - Yasin
+## Program
 
-When:
-- 30th of September
-- 18:00 - 20:00
+1. **Why ERNI uses Rust and an Intro to Rust** – Alexander
+2. **A performance comparison between Python/Java serialization and Serde in Rust** – Silen
+3. **Experiences from mixed Rust/C++ codebases – and lessons learned** – Yasin
 
-Where:
-- Aeschenvorstadt 36, 4052 Basel (CH) - Office of ERNI on the 6th floor
+## Apéro
 
-Type of Meetup: 
-- On-site
+Simon takes care of food and drinks; the budget has been approved.
+
+## Notes
+
+- **Merch**: We can put out merchandise – I asked Ivana Mojžišová about it.
+- **Promotion**: Rust Basel invited via Meetup; Simon will also send targeted invitations; Alex will publish the event as a community event.
